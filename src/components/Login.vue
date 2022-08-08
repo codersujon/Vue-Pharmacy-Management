@@ -2,7 +2,7 @@
     <div class="login-page">
         <div class="login-card">
             <div class="text-center">
-              <img src="images/lock.png" alt="" class="login-card__icon">
+              <img src="/images/lock.png" alt="" class="login-card__icon">
             </div>
         </div>
     </div>
