@@ -3,7 +3,26 @@
         <div class="login-card">
             <div class="text-center">
               <img src="/images/lock.png" alt="" class="login-card__icon">
+              <h1>User Login</h1>
             </div>
+            <form action="#">
+              <label class="block">Email</label>
+              <input type="email" placeholder="Enter your email">
+              <label class="block mt-3">Password</label>
+              <input type="password" placeholder="Enter your email">
+              <button type="submit" class="block mt-3 w-100">Login</button>
+              <div class="d-flex jc-between mt-3">
+                <div>
+                  <label>
+                    <input type="checkbox">
+                    Remember Me
+                  </label>
+                </div>
+                <div>
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+            </form>
         </div>
     </div>
 </template>
