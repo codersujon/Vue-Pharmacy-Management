@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import mitt from 'mitt'
-import './assets/css/ayoflex.css'
+import 'ayoflex/dist/ayoflex.min.css'; 
 import './assets/css/example.css'
 import App from './App.vue'
 

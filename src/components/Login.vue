@@ -34,7 +34,9 @@
       formData: {
         email: "",
         password: ""
-      }
+      },
+      movedToRight:false,
+      showing: false
     }),
 
     methods: {
@@ -69,6 +71,24 @@
 </script>
 
 <style scoped>
+.box{
+  width: 55px;
+  height: 55px;
+  background-color: greenyellow;
+  margin-bottom: 22px;
+}
+.box-right{
+  margin-left: 222px;
+  transition: all 0.5s;
+}
+
+.box1{
+  width: 55px;
+  height: 55px;
+  background-color: greenyellow;
+  margin-bottom: 22px;
+  animation: showHide 1s ease-in;
+}
   .login-page {
     position: fixed;
     top: 0;
@@ -99,20 +119,20 @@
     max-width: 77px;
   }
 
-  @keyframes showhide {
-    0% {
-      opacity: 0;
-      transform: scale(0.5);
-    }
-
-    50% {
-      opacity: 0.5;
-      transform: scale(1.2);
-    }
-
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+@keyframes showHide {
+  0%{
+    opacity: 0;
+    transform: scale(0.5);
   }
+  50%{
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 </style>
